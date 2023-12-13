@@ -1,10 +1,10 @@
-with open('day01/input.txt', 'r') as f:
+with open("input.txt", "r") as f:
     input = f.read()
-    input = input.split('\n\n')
+    input = input.split("\n\n")
 
 list_of_elf_calories = []
 for elf_calories in input:
-    elf_calories = (elf_calories.split())
+    elf_calories = elf_calories.split()
     sum = 0
     for elf_calorie in elf_calories:
         sum += int(elf_calorie)
